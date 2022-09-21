@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 7px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --red:var(--red);
+    --white:var(--white);
+    
+}
+body {
+    color: var(--dark);
+    background: rgb(255, 255, 255);
+    background-image: url(src/img/textura.jpg);
+    background-size: cover;
+}
+.navegation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    box-shadow: 0 0.1px 0.5rem rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    list-style: none;
+}
+.navegation .logo{
+    color: var(--dark);
+    font-size: 1.7rem;
+    font-weight:600;
+}
+.navegation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navegation ul li a{
+    color: var(black);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.navegation ul li a:hover{
+    color: var(red);
+    position:static;
+    width: auto;
+    height: 10px; 
+}
+.navegation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.navegation .nav-menu .nav-item a{
+    font-size: medium;
+    text-decoration: none;
+    list-style: none;
+}
+.menu {
+    cursor: pointer;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 5px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1)
+.menu .bar:nth-child(1){
+    background: var(red);
+}
+.absolute .carrinho {
+        height: 30px;
+        width: 35px;
+        position: absolute;
+        top: 29px;
+        right: 50px;
+        cursor: pointer;
+}
+.absolute .perfil{
+        height: 30px;
+        width: 35px;
+        position: absolute;
+        top: 29px;
+        right: 110px;
+        cursor: pointer;
+ }
+ .home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+ }
+.conteiner{
+    max-width: 37rem;
+}
+.home-text .text-h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-family: 'poppins', sans-serif;
+}
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow:  white;
+}
+.home-text p{
+    margin-bottom: 4rem;
+    color: rgb(255, 255, 255);
+}
+.home-btn{
+    padding: 15px 45px;
+    background: orangered;
+    background: linear-gradient(orangered, red);
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: all 0.5s;
+    border-radius: 60px;
+}
+.burguer img{
+   transform: rotate(-15deg);
+   width: 15cm;
+}
+.menu-btn {
+    padding: 4px 30px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    font-size: small;
+    font-weight: 300px;
+    transition: all 0.5s;
+    border-radius: 15px;
+
+}
+.circle{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 92, 32);
+    background: linear-gradient(orange, rgb(255, 0, 0));
+    clip-path: circle(50% at bottom right);   
+}
+.home-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width:785px) {
+    .navegation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translate(8px) rotate(45deg);
+    }
+    .menu.ativo bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo bar:nth-child(3){
+        transform: translate(-8px) (-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100px;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: rgb(0, 0, 0);
+        gap: -10px;
+        transition: 0.3s;
+    }
+}
+
+.section .conteiner{
+    width: 100%;
+    max-width: 600px;
+    background-color: brown;
+}
+
+.box-glass{
+background: rgba(255, 255, 255, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(8.6px);
+-webkit-backdrop-filter: blur(8.6px);
+}
